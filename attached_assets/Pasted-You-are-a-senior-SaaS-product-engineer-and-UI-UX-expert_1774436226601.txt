@@ -1,0 +1,90 @@
+You are a senior SaaS product engineer and UI/UX expert.
+
+I already have a working Super Admin Dashboard for a multi-tenant SaaS (PixelStudio). The current system includes:
+
+* Overview metrics (studios, users, revenue, etc.)
+* Tenant (studio) management
+* Activity log
+* Plan indicators (Free / Pro)
+* Ability to enter a studio
+
+Your task is NOT to redesign from scratch, but to UPGRADE and EXTEND the existing system into a production-level SaaS admin dashboard.
+
+Strict rules:
+
+* Do NOT remove or break existing features
+* Do NOT change UI structure drastically
+* Do NOT rewrite working logic
+* Keep the current design style consistent
+* Only enhance and extend
+
+What you must add and improve:
+
+1. BILLING & SUBSCRIPTION SYSTEM
+
+* Add subscription status (Active, Trial, Expired)
+* Add expiry dates for each tenant
+* Add payment history per tenant
+* Add automatic actions (disable or downgrade expired tenants)
+
+2. ADVANCED ANALYTICS
+
+* Add charts for:
+
+  * Revenue over time
+  * New tenants growth
+  * Active vs inactive tenants
+* Show top-performing tenants
+* Add insights like “Most active studio”
+
+3. GLOBAL SEARCH
+
+* Add search functionality to find tenants, users, or emails quickly
+
+4. IMPERSONATION FEATURE
+
+* Improve “Enter Studio” into a proper “Login as Tenant” system
+* Ensure safe switching and return to admin
+
+5. NOTIFICATIONS SYSTEM
+
+* Add admin notifications (e.g. new signup, failed payment, limits reached)
+* Add notification UI (bell icon + dropdown)
+
+6. PLAN & FEATURE CONTROL
+
+* Create a centralized plan management system
+* Define limits per plan (staff, customers, storage, etc.)
+* Enforce limits in tenant data
+
+7. IMPROVED ACTIVITY LOG
+
+* Add filtering (by tenant, action type, date)
+* Make logs more detailed and useful
+
+8. SYSTEM HEALTH MONITOR
+
+* Show system status (API, database, uptime)
+* Add basic performance indicators
+
+9. EXPORT & REPORTS
+
+* Allow exporting tenants and revenue data (CSV or PDF)
+
+10. UX IMPROVEMENTS
+
+* Add tooltips and better feedback
+* Improve limit indicators (e.g. “Limit reached” + upgrade suggestion)
+* Use consistent color system (green = good, red = warning, yellow = limit)
+
+Output requirements:
+
+* Show updated component structure (frontend)
+* Suggest backend changes required (brief)
+* Provide example UI sections (cards, tables, charts)
+* Keep everything aligned with my existing dashboard design
+
+Do NOT explain theory. Focus on practical upgrades.
+
+Here is my current system:
+[PASTE SCREENSHOTS OR CODE HERE]

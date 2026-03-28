@@ -1,0 +1,65 @@
+You are a senior frontend engineer specializing in React, Next.js, and state management.
+
+I have an existing SaaS application (React + TypeScript). The app has a major issue: data does not update automatically. When I create, update, or delete data (e.g. customers, orders, dashboard stats), the UI does NOT reflect the changes unless I manually refresh the page, sometimes multiple times.
+
+Your task is to FIX this issue across the ENTIRE application without breaking existing functionality.
+
+Strict rules:
+
+* Do NOT change UI design or layout
+* Do NOT modify business logic unnecessarily
+* Do NOT rename components unless required
+* Do NOT rebuild the app
+* Only improve data fetching and state synchronization
+
+What you must do:
+
+1. GLOBAL DATA FLOW FIX
+
+* Ensure all pages (admin dashboard, tenant dashboard, staff views) always show fresh data
+* Remove stale data issues completely
+
+2. IMPLEMENT REACT QUERY (TanStack Query)
+
+* Replace manual fetching (useEffect, etc.) with React Query where appropriate
+* Use useQuery for fetching data
+* Use useMutation for create/update/delete actions
+
+3. AUTO REFRESH AFTER ACTIONS
+
+* After mutations (create/update/delete), automatically refresh related data using:
+  queryClient.invalidateQueries()
+
+4. HANDLE CACHING PROPERLY
+
+* Ensure no stale or outdated data is shown
+* Configure query keys correctly
+* Use refetching strategies where needed
+
+5. FIX NAVIGATION DATA ISSUES
+
+* Ensure when navigating between pages, fresh data is fetched automatically
+* Prevent reused stale state
+
+6. NEXT.JS (IF APPLICABLE)
+
+* If using Next.js, disable unwanted caching:
+
+  * use { cache: "no-store" } where needed
+  * or revalidation strategies
+
+7. ERROR HANDLING
+
+* Ensure loading and error states are handled properly (no broken UI)
+
+Output requirements:
+
+* Show how to set up React Query globally
+* Show example refactor of one page (before → after)
+* Show how mutations trigger automatic UI updates
+* Keep explanations minimal and practical
+
+Do NOT explain theory. Focus on implementation and fixes.
+
+Here is my project:
+[PASTE YOUR CODE OR REPO LINK HERE]
